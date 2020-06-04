@@ -1,0 +1,16 @@
+[package]
+name = "ubloom-filter"
+authors = ["faruken <faruken@users.noreply.github.com>"]
+version = "0.0.1"
+edition = "2018"
+
+[lib]
+name = "ubloom_filter"
+crate-type = ["cdylib"]
+
+[dependencies]
+farmhash = "1.1.5"
+
+[dependencies.pyo3]
+version = "0.10.1"
+features = ["extension-module"]
